@@ -59,9 +59,9 @@ function Sidebar() {
                             <Link to="/bgr" className='side-links' onClick={closeMobileMenu}> 
                             <ToggleSidebar 
                                     name='BGR' 
-                                    list={['CCCA',
-                                            'Gestión Inbound',
-                                            'Gestión Redes Sociales']}
+                                    list={['Novedeades BGR',
+                                            'Encuesta'
+                                        ]}
                                 /> 
                             </Link>
                         </li>
@@ -69,9 +69,13 @@ function Sidebar() {
                             <Link to="/otras_campañas" className='side-links' onClick={closeMobileMenu}> 
                             <ToggleSidebar 
                                     name='Otras Campañas' 
-                                    list={['CCCA',
-                                            'Gestión Inbound',
-                                            'Gestión Redes Sociales']}
+                                    list={['Claro',
+                                            'Ecuasistencias Ventas',
+                                            'Ecuasistencias Encuestas',
+                                            'IP TV',
+                                            'Jardines del Valle',
+                                            'Practi Plan'
+                                        ]}
                                 /> 
                             </Link>
                         </li>

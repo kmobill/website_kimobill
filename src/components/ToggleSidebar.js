@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./ToggleSideBar.css";
 const ToggleSidebar = (props) => {
     const [isOpen, setIsopen] = useState(false);
+    //const lista = ['asdasd','vbvcbcvb'];
     const list_props = props.list.map((item) =>
+    //const list_props = lista.map((item)=>
     <li>{item}</li>
 );
     const ToggleSidebar = () => {
@@ -20,10 +22,7 @@ const ToggleSidebar = (props) => {
                         </div>
                         
                         <div className="sd-body">
-                            <ul>{list_props}         
-
-                                <li><a className="sd-link">registro de actividades</a></li>
-                            </ul>
+                            <ul>{list_props}</ul>
                         </div>
             </div>
             <div className={`sidebar-overlay ${isOpen == true ? 'active' : ''}`} onClick={ToggleSidebar}></div>
