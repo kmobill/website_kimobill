@@ -47,17 +47,32 @@ function Sidebar() {
                         </li>
                         <li className='side-item'>
                             <Link to="/banco_pichincha" className='side-links' onClick={closeMobileMenu}> 
-                                Banco Pichincha
+                            <ToggleSidebar 
+                                    name='Banco Pichincha' 
+                                    list={['CCCA',
+                                            'Gestión Inbound',
+                                            'Gestión Redes Sociales']}
+                                /> 
                             </Link>
                         </li>
                         <li className='side-item'>
                             <Link to="/bgr" className='side-links' onClick={closeMobileMenu}> 
-                                BGR
+                            <ToggleSidebar 
+                                    name='BGR' 
+                                    list={['CCCA',
+                                            'Gestión Inbound',
+                                            'Gestión Redes Sociales']}
+                                /> 
                             </Link>
                         </li>
                         <li className='side-item'>
                             <Link to="/otras_campañas" className='side-links' onClick={closeMobileMenu}> 
-                                Otras campañas
+                            <ToggleSidebar 
+                                    name='Otras Campañas' 
+                                    list={['CCCA',
+                                            'Gestión Inbound',
+                                            'Gestión Redes Sociales']}
+                                /> 
                             </Link>
                         </li>
                     </ul>  
